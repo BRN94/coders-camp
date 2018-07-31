@@ -1,16 +1,22 @@
 body
 {
-    font-family: 'Montserrat', sans-serif;
     font-family: 'Raleway', sans-serif;
-    background: url("img/qbkls.png") repeat;
-    font-size: 16px;
+    background: url("img/background.png") repeat;
+    font-size: 20px;
     font-weight: 400;
-    line-height: 24px;
-    color: #292929;
+    line-height: 16px;
+    color: #666666;
+    margin: 0;
 }
 
+.main
+{
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+}
 
-.container 
+.card
 {
     position: absolute;
     width: 1032px;
@@ -34,35 +40,72 @@ body
     position: absolute;
     width: 1032px;
     height: 305px;
-
     background: #E04B54;
-    border-radius: 16px 16px 0px 0px;
+    border-radius: 16px 16px 0px 0px; 
 }
 
-.rectangle21
+.rectangle2-1
 {
     position: absolute;
     width: 1032px;
     height: 305px;
-
-    background: url(img/Rectangle21.png);
+    background: url(img/rctngl21.png);
     border-radius: 16px 16px 0px 0px;
 }
 
-.main
+.image
 {
     position: absolute;
-    margin-top: 352px;
+    width: 280px;
+    height: 280px;
+    left: 48px;
+    top: 48px;
+    background: url(img/image.png);
+    box-sizing: border-box;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button
+{
+    position: absolute;
+    width: 176px;
+    height: 40px;
+    left: 48px;
+    top: 510px;
+    border: 1px solid #E04B54;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.button-text
+{
+    position: absolute;
+    width: 144px;
+    height: 22px;
+    left: 16px;
+    top: 9px;   
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 21px;
+    font-size: 14px;
+    color: #E04B54;  
+}
+
+.about-me
+{
+    position: absolute;
     width: 630px;
     height: 130px;
     left: 48px;
-    top: 405.08;
+    top: 352px; 
 }
 
-.aboutme
+.about-me-title
 {
     position: absolute;
-
+    width: 278.92px;
+    height: 30px;
     
     font-family: Montserrat;
     font-style: normal;
@@ -73,63 +116,21 @@ body
     color: #000000;
 }
 
-.lorem
+.about-me-text
 {
-    margin-top: 49px;
     position: absolute;
-    width: 630px;
-    height: 130px;
-    left: 0;
-    top: 0;
-    
+    top: 39px;
     font-family: Raleway;
     font-style: normal;
     font-weight: normal;
     line-height: 24px;
     font-size: 16px;
-    
     color: #666666;
 }
 
-.button
+.data
 {
-    position: absolute;
-    width: 176px;
-    height: 40px;
-    left: 48px;
-    top: 510px;    
-    
-    border: 1px solid #E04B54;
-    box-sizing: border-box;
-    border-radius: 4px;
-}
 
-.buttonstyle
-{
-    position: absolute;
-    width: 144px;
-    height: 22px;
-    left: 16px;
-    top: 9px; 
-
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 21px;
-    font-size: 14px;
-
-    color: #E04B54;
-}
-
-.image
-{
-    position: absolute;
-    width: 280px;
-    height: 280px;
-    left: 48px;
-    top: 48px;
-    box-sizing: border-box;
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
 }
 
 .center
@@ -137,80 +138,88 @@ body
     position: absolute;
     width: 264px;
     height: 169px;
-    left: 992px;
-    top: 258px;  
-}
-
-.header
-{
-    
-    position: absolute;
-    width: 264px;
-    height: 97px;
-    left: 567px;
+    left: 548px;
     top: 91px;
 }
 
-.janedoe
+.center-header
+{
+    position: absolute;
+    width: 264px;
+    height: 97px;
+}
+
+.name
 {
     position: absolute;
     width: 264px;
     height: 66px;
-    
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     line-height: normal;
-    font-size: 54px;
-    
+    font-size: 54px;   
     color: #FFFFFF;
 }
 
-.frontend
+.profession
 {
     position: absolute;
     width: 227px;
     height: 29px;
-    top: 66px;
-    left: 18.5px;
+    left: 19px;
+    top: 68px;
     font-family: Raleway;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     font-size: 24px;
-
-    
     color: #FFFFFF;
 }
-/** cos nie tak..
-.socials
+
+.center-socials
 {
     position: absolute;
     width: 208px;
     height: 40px;
-    left: 576px;
-    top: 220px;
-
+    left: 28px;
+    top: 129px;
+    display: flex; 
+    justify-content: center; 
 }
 
-.social
+a {
+    color: #fff; 
+    outline: 0; 
+    text-decoration: none; 
+  }
+
+.social 
 {
-    position: absolute;
-    width: 40px;
-    height: 40px;
+    transition: all 0.3s ease-in-out; 
+    border-radius: 100%; 
+    border: solid 1px #fff; 
+    width: 40px; 
+    height: 40px; 
+    margin: 0 5px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
 }
 
-.ellipse
+.social:hover
 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    cursor: pointer; 
+    background-color: rgba(255, 255, 255, 0.175); 
 }
-**/
+
+.social a
+{
+    cursor: pointer; 
+}
 
 .data
 {
-    
     position: absolute;
     width: 258px;
     height: 124px;
@@ -226,8 +235,7 @@ body
     font-style: normal;
     font-weight: bold;
     line-height: 24px;
-    font-size: 16px;
-    
+    font-size: 16px;   
     color: #292929;
 }
 
@@ -240,6 +248,5 @@ body
     font-weight: normal;
     line-height: 24px;
     font-size: 16px;
-
-color: #666666;
+    color: #666666;
 }
